@@ -1,4 +1,4 @@
-export const getSign = (sign) => {
+export const getSign = (sign, day) => {
     return () => {
         dispatch({type: 'GET_SIGN'}, sign, day)
             fetch(`https://sameer-kumar-aztro-v1.p.rapidapi.com/?sign=${sign}&day=${day}`, {
@@ -17,7 +17,5 @@ export const getSign = (sign) => {
             .catch(err => {
                 console.log(err);
             });
-
-
     }
 }
