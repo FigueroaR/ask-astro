@@ -6,7 +6,11 @@ class Card extends React.Component {
         console.log(this.props.sign)
         const name = this.props.sign
         return (
-        <div>{name}</div>
+        <div>{name}
+            <button>Yesterday</button>
+            <button>Today</button>
+            <button>Tomorrow</button>
+        </div>
         )
     }
 }
