@@ -1,11 +1,10 @@
 import {  combineReducers } from 'redux'
 
-// import postsReducer from './postsReducer'
-// import usersReducer from './usersReducer'
-// import commentsReducer from './commentsReducer'
+import signsReducer from './signsReducer'
+
 
 const rootReducer = combineReducers({
-//   users: usersReducer,
+   sign: signsReducer
 //   posts:  postsReducer,
 //   comments: commentsReducer
 })
