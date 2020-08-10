@@ -3,9 +3,19 @@ export default ( state = {sign:[], loading: false}, action) => {
         case "GET_SIGN":
             console.log("getting sign")
             return {
-                ...state, 
+                ...state,
+                loading: true
+            }
+
+        case "LOADED_SIGN":
+            console.log("the astros has spoken back to us")
+            return {
+                ...state,
+                sign: [...state, action.payload],
                 loading: false
             }
+
+
         default:
             return state
     }
