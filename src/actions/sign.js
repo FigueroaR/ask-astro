@@ -13,11 +13,11 @@ export const getSign = (sign, day) => {
             })
             .then( resp => resp.json() )
             .then( info => {
-                console.log(info)
                 dispatch({type: 'LOADED_SIGN' , payload: info})
             })
             .catch(err => {
                 console.log(err);
+                dispatch({type: 'ERROR_REPORT', payload: err})
             });
     }
 }

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { connect } from 'react-redux'
+import { getSign } from '../actions/sign'
 import { useHistory, Link} from "react-router-dom";
 
 function SoloSign(props) {
@@ -21,4 +22,8 @@ function SoloSign(props) {
         </div>)
 }
 
-export default SoloSign;
+const mapStateToProps = state => {
+    
+}
+
+export default connect(null, { getSign })(SoloSign);
