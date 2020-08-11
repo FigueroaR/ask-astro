@@ -14,8 +14,7 @@ export default ( state = {sign:[], loading: false}, action) => {
                 sign: [...state, action.payload],
                 loading: false
             }
-
-
+            
         default:
             return state
     }

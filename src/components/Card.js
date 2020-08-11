@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux'
 import { useHistory, Link} from "react-router-dom";
 import Signs from '../containers/Signs';
+import { getSign } from '../actions/sign'
 
 function Card(props) {
 
@@ -14,7 +15,7 @@ function Card(props) {
     const [day, setDay] = useState("");
 
     function handleOnSubmit() {
-        setSign
+        //setSign
 
     }
         
