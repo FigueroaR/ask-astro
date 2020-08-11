@@ -8,10 +8,9 @@ export default ( state = {sign:[], loading: false}, action) => {
             }
 
         case "LOADED_SIGN":
-            console.log("the astros has spoken back to us")
+            console.log("the astros has spoken back to us", action.payload)
             return {
-                ...state,
-                sign: [...state, action.payload],
+                sign: [action.payload],
                 loading: false
             }
             
