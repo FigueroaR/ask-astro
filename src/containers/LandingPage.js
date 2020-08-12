@@ -9,7 +9,7 @@ class LandingPage extends React.Component {
         
         document.title = "Welcome"
         return(
-        <div>LANDING <Signs /> </div>
+        <div><Signs /> </div>
             )
     }
 }

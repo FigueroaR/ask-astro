@@ -1,4 +1,4 @@
-export default ( state = {sign:[], error:[], loading: false}, action) => {
+export default ( state = {data:[], error:[], loading: false}, action) => {
     switch(action.type) {
         case "GET_SIGN":
             console.log("getting sign")
@@ -11,7 +11,7 @@ export default ( state = {sign:[], error:[], loading: false}, action) => {
             console.log("the astros has spoken back to us", action.payload)
             return {
                 ...state,
-                sign: [action.payload],
+                data: [action.payload],
                 loading: false
             }
 
