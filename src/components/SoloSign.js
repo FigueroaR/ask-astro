@@ -11,17 +11,7 @@ function SoloSign(props) {
         
         
         // function display() {
-        //     if (props.sign !== undefined) {
-        //     let {
-        //         date_range, 
-        //         current_date, 
-        //         description, 
-        //         compatability,
-        //         mood,
-        //         color,
-        //         lucky_number,
-        //         lucky_time} = props.sign;
-        // }
+        //     
         //} 
 
         function handleOnAsk() {
@@ -31,16 +21,33 @@ function SoloSign(props) {
         }
 
         function display () {
-            return(<div></div>) 
+            if (props.sign !== undefined) {
+                    let {
+                        date_range, 
+                        current_date, 
+                        description, 
+                        compatability,
+                        mood,
+                        color,
+                        lucky_number,
+                        lucky_time} = props.sign;
+
+                        return(<div>
+                            <div>{name}</div>
+                            <button onClick={e => setDay('yesterday')}>Yesterday</button>
+                            <button onClick={e => setDay('today')}>Today</button>
+                            <button onClick={e => setDay('tomorrow')}>Tomorrow</button>
+                            <button onClick={handleOnAsk}>Ask!</button>
+                        </div>)
+                } else {
+                    return(<div>..loading...</div>) 
+                }
+            
         }
     
         return (<div>
-            <div>{name}</div>
-            <button onClick={e => setDay('yesterday')}>Yesterday</button>
-            <button onClick={e => setDay('today')}>Today</button>
-            <button onClick={e => setDay('tomorrow')}>Tomorrow</button>
-            <button onClick={handleOnAsk}>Ask!</button>
-
+            
+            {display()}
         </div>)
 }
 
