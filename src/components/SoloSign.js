@@ -14,10 +14,12 @@ function SoloSign(props) {
         //     
         //} 
 
-        function handleOnAsk() {
-            props.getSign(name, day)
+        function handleOnAsk(e) {
+            let zDay = e.currentTarget.id
+            debugger;
+            props.getSign(name, zDay)
             //history.push(`/sign/${name}/day/${day}`)
-            props.history.push(`/sign/${name}/day/${day}`)
+            props.history.push(`/sign/${name}/day/${zDay}`)
         }
 
         function display () {
@@ -34,10 +36,9 @@ function SoloSign(props) {
 
                         return(<div>
                             <div>{name}</div>
-                            <button onClick={e => setDay('yesterday')}>Yesterday</button>
-                            <button onClick={e => setDay('today')}>Today</button>
-                            <button onClick={e => setDay('tomorrow')}>Tomorrow</button>
-                            <button onClick={handleOnAsk}>Ask!</button>
+                            <button onClick={handleOnAsk} id="yesterday">yesterday</button>
+                            <button onClick={handleOnAsk} id="today">today</button>
+                            <button onClick={handleOnAsk} id="tomorrow">tomorrow</button>
                         </div>)
                 } else {
                     return(<div>..loading...</div>) 
