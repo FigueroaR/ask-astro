@@ -16,7 +16,7 @@ function SoloSign(props) {
 
         function handleOnAsk(e) {
             let zDay = e.currentTarget.id
-            debugger;
+            //debugger;
             props.getSign(name, zDay)
             //history.push(`/sign/${name}/day/${day}`)
             props.history.push(`/sign/${name}/day/${zDay}`)
@@ -40,6 +40,8 @@ function SoloSign(props) {
                             <button onClick={handleOnAsk} id="today">today</button>
                             <button onClick={handleOnAsk} id="tomorrow">tomorrow</button>
                         </div>)
+                // } else if (props.sign['message']) {
+                //     return <div>{props.sign}</div>
                 } else {
                     return(<div>..loading...</div>) 
                 }
