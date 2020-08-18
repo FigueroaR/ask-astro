@@ -28,21 +28,22 @@ function SoloSign(props) {
                         date_range, 
                         current_date, 
                         description, 
-                        compatability,
+                        compatibility,
                         mood,
                         color,
                         lucky_number,
                         lucky_time} = props.sign;
 
                         return(<div>
-                            <div>{name}</div>
-                            <div>{date_range}</div>
-                            <div>{current_date}</div>
-                            <div>{description}</div>
-                            <div>{mood}</div>
-                            <div>{color}</div>
-                            <div>{lucky_number}</div>
-                            <div>{lucky_time}</div>
+                            <div>Sign: {name}</div>
+                            <div>Range: {date_range}</div>
+                            <div>Day: {current_date}</div>
+                            <div>Description: {description}</div>
+                            <div>Mood: {mood}</div>
+                            <div>Compatability: {compatibility}</div>
+                            <div>Color: {color}</div>
+                            <div>Lucky Number: {lucky_number}</div>
+                            <div>Lucky Time: {lucky_time}</div>
                             <button onClick={handleOnAsk} id="yesterday">yesterday</button>
                             <button onClick={handleOnAsk} id="today">today</button>
                             <button onClick={handleOnAsk} id="tomorrow">tomorrow</button>
