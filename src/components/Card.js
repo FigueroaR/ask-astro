@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { useHistory, Link} from "react-router-dom";
 import { getSign } from '../actions/sign'
 
+
 function Card(props) {
 
     let history = useHistory();
@@ -20,7 +21,7 @@ function Card(props) {
         
     return (
     <div onClick={handleOnSubmit}>{sign}
-        
+        <img src={props.svg}/>
     </div>
     )
     

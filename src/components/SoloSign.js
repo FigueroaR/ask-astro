@@ -35,6 +35,7 @@ function SoloSign(props) {
                         lucky_time} = props.sign;
 
                         return(<div>
+                            
                             <div>Sign: {name}</div>
                             <div>Range: {date_range}</div>
                             <div>Day: {current_date}</div>
