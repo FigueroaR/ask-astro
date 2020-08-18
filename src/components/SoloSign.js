@@ -36,6 +36,13 @@ function SoloSign(props) {
 
                         return(<div>
                             <div>{name}</div>
+                            <div>{date_range}</div>
+                            <div>{current_date}</div>
+                            <div>{description}</div>
+                            <div>{mood}</div>
+                            <div>{color}</div>
+                            <div>{lucky_number}</div>
+                            <div>{lucky_time}</div>
                             <button onClick={handleOnAsk} id="yesterday">yesterday</button>
                             <button onClick={handleOnAsk} id="today">today</button>
                             <button onClick={handleOnAsk} id="tomorrow">tomorrow</button>
