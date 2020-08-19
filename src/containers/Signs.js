@@ -25,6 +25,10 @@ class Signs extends React.Component {
         
         return(
             <div >
+                <div class="ui sizer vertical segment">
+                <h1 className="ui huge center aligned blue header">Ask Aztro</h1>
+                </div>
+                
                 <div className="ui grid container">
                     
                             {allCards} 

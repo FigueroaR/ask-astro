@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { connect } from 'react-redux'
 import { getSign } from '../actions/sign'
 import { useHistory } from "react-router-dom";
+import Loading from './Loading'
 //import svg from '../signs/aries-1.svg';
 
 function SoloSign(props) {
@@ -49,7 +50,7 @@ function SoloSign(props) {
                 // } else if (props.sign['message']) {
                 //     return <div>{props.sign}</div>
                 } else {
-                    return(<div>..loading...</div>) 
+                    return(<div> <Loading /> </div>) 
                 }
             
         }

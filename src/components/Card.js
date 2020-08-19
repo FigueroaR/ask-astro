@@ -21,8 +21,15 @@ function Card(props) {
         
     return (
         <div className="four wide column">
-            {sign}
-            <img onClick={handleOnSubmit} src={props.svg}/>
+            <div className="ui card">
+                <div className="content">
+                    <div className="header">{sign}</div>
+                </div>
+
+                <img className="image" onClick={handleOnSubmit} src={props.svg}/>
+            </div>
+
+            
         </div>  
                     
                 
