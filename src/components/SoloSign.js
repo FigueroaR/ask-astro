@@ -2,17 +2,14 @@ import React, {useState} from 'react';
 import { connect } from 'react-redux'
 import { getSign } from '../actions/sign'
 import { useHistory } from "react-router-dom";
+//import svg from '../signs/aries-1.svg';
 
 function SoloSign(props) {
-        //console.log(props.match.params.sign, props.sign)
+        //console.log (props.sign, props)
+        //debugger;
         let name = props.match.params.sign
         document.title = name;
-        let [day, setDay] = useState('')
-        
-        
-        // function display() {
-        //     
-        //} 
+        // let [day, setDay] = useState('')
 
         function handleOnAsk(e) {
             let zDay = e.currentTarget.id

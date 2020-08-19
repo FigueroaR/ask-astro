@@ -12,9 +12,10 @@ class App extends React.Component {
                 <Router>
                     <Switch>
                     <Route exact path='/' component={LandingPage} />
-                    <Route exact path='/sign/:sign/day/:day' component={SoloSign}/>
+                    <Route exact path='/sign/:sign/day/:day' render={ props => <SoloSign {...props}/>}/>
                     </Switch>
                 </Router>
+                <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
             </div>
         )

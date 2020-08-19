@@ -20,9 +20,16 @@ function Card(props) {
     }
         
     return (
-    <div onClick={handleOnSubmit}>{sign}
-        <img src={props.svg}/>
-    </div>
+        <div className="four wide column">
+            {sign}
+            <img onClick={handleOnSubmit} src={props.svg}/>
+        </div>  
+                    
+                
+                
+           
+        
+    
     )
     
 }

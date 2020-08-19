@@ -24,7 +24,12 @@ class Signs extends React.Component {
         const allCards = astros.map( (data, i ) => <Card key={i} sign={data.sign} svg={data.svg} />)
         
         return(
-            <div>SIGNSS!! {allCards} </div>
+            <div >
+                <div className="ui grid container">
+                    
+                            {allCards} 
+                </div>
+            </div>
         )
     }
 }
