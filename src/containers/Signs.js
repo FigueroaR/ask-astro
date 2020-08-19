@@ -30,8 +30,7 @@ class Signs extends React.Component {
                 </div>
                 
                 <div className="ui grid container">
-                    
-                            {allCards} 
+                    {allCards} 
                 </div>
             </div>
         )

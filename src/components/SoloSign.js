@@ -20,7 +20,7 @@ function SoloSign(props) {
             props.history.push(`/sign/${name}/day/${zDay}`)
         }
 
-        function display () {
+        function display() {
             if (props.sign !== undefined) {
                     let {
                         date_range, 
@@ -51,12 +51,10 @@ function SoloSign(props) {
                 //     return <div>{props.sign}</div>
                 } else {
                     return(<div> <Loading /> </div>) 
-                }
-            
+                }   
         }
     
         return (<div>
-            
             {display()}
         </div>)
 }
