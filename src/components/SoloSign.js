@@ -32,20 +32,23 @@ function SoloSign(props) {
                         lucky_number,
                         lucky_time} = props.sign;
 
-                        return(<div>
-                            
-                            <div>Sign: {name}</div>
-                            <div>Range: {date_range}</div>
-                            <div>Day: {current_date}</div>
-                            <div>Description: {description}</div>
-                            <div>Mood: {mood}</div>
-                            <div>Compatability: {compatibility}</div>
-                            <div>Color: {color}</div>
-                            <div>Lucky Number: {lucky_number}</div>
-                            <div>Lucky Time: {lucky_time}</div>
-                            <button onClick={handleOnAsk} id="yesterday">yesterday</button>
-                            <button onClick={handleOnAsk} id="today">today</button>
-                            <button onClick={handleOnAsk} id="tomorrow">tomorrow</button>
+                        return(
+                        <div className='ui centered card'>
+                            <div className="content">
+                                <div className='header'>{name}</div>
+                                <div className='meta'>{date_range}</div><br></br>
+                                <div className="description">Day: {current_date}</div><br></br>
+                                <div className="description">Description: {description}</div><br></br>
+                                <div className="description">Mood: {mood}</div><br></br>
+                                <div className="description">Compatability: {compatibility}</div><br/>
+                                <div className="description">Color: {color}</div><br/>
+                                <div className="description">Lucky Number: {lucky_number}</div><br/>
+                                <div className="description">Lucky Time: {lucky_time}</div><br/>
+                                <button onClick={handleOnAsk} id="yesterday">yesterday</button>
+                                <button onClick={handleOnAsk} id="today">today</button>
+                                <button onClick={handleOnAsk} id="tomorrow">tomorrow</button>
+                            </div>
+                           
                         </div>)
                 // } else if (props.sign['message']) {
                 //     return <div>{props.sign}</div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Signs.css'
 //import {connect} from 'react-redux';
 import Card from '../components/Card';
 import aries from '../signs/aries-1.svg'
@@ -25,11 +26,14 @@ class Signs extends React.Component {
         
         return(
             <div >
-                <div class="ui sizer vertical segment">
-                <h1 className="ui huge center aligned blue header">Ask Aztro</h1>
+                <div className="bottomspace">
+                    <div className=" ui sizer vertical segment">
+                        <h1 className="ui huge center aligned blue header">Ask Aztro</h1>
+                    </div>
                 </div>
                 
-                <div className="ui grid container">
+                
+                <div className=" ui grid container">
                     {allCards} 
                 </div>
             </div>
